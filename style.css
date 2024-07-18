@@ -1,2 +1,12 @@
 :root {
+  --primaryFontColor: #28283D;
+  --secondaryFontColor: #87879D;
+  --purpleButtonColor: #855FB1;
+  --blueButtonColor: #4D96A9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
