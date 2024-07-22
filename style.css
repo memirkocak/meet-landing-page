@@ -1,12 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
   --primaryFontColor: #28283D;
   --secondaryFontColor: #87879D;
   --purpleButtonColor: #855FB1;
   --blueButtonColor: #4D96A9;
+  --Font: Red Hat Display;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: var(--Font);
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 30px;
+}
+
+.logo{
+  margin-bottom:60px;
+}
+
+.headerBg{
+  width: 100dvw;
+}
+
+main{
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: var(--primaryFontColor);
+  text-align: center;
+  width: 200px;
+}
+
+.h1-p{
+  text-align: center;
+  color: var(--secondaryFontColor);
+  margin: 20px 0 20px;
+  width: 85dvw;
+}
+
+.DownloadBtn{
+  background-color: var(--blueButtonColor);
+  border: none;
+  width: 193px;
+  height: 58px;
+  border-radius: 999px;
+  color: white;
+}
+
+.DownloadBtn span{
+  color: #8FE3F9;
+}
+
+.what-is-itBtn{
+  background-color: var(--purpleButtonColor);
+  border: none;
+  width: 139px;
+  height: 58px;
+  border-radius: 999px;
+  color: white;
+  margin: 10px 0 40px 0;
+}
+
+.section-img{
+  width: 151px;
+  height: 143px;
+  border-radius: 10px;
+}
+
+.imgSection{
+  display: grid;
+  grid-template-columns: 160px 160px;
+  gap: 20px;
+  width: 100dvw;
+  justify-content: center;
 }
