@@ -73,7 +73,7 @@ h1{
   height: 58px;
   border-radius: 999px;
   color: white;
-  margin: 10px 0 200px 0;
+  margin: 10px 0 130px 0;
 }
 
 .section-img{
@@ -117,7 +117,7 @@ h1{
 }
 
 footer{
-  width: 375px;
+  width: 100dvw;
   height: 428px;
   background-image: url(img/footerBG.jpg);
   display: flex;
@@ -175,7 +175,7 @@ footer{
   border-radius: 999px;
   position: absolute;
   z-index: 1;
-  top: 227%;
+  top: 234%;
   border: solid;
   border-width: 1px;
   font-weight: bold;
@@ -190,10 +190,44 @@ footer{
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  position: absolute;
-  z-index: 1;
-  top: 110%;
   border: solid;
   border-width: 1px;
   font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.BtnDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .h1-p{
+    width: 55dvw;
+  }
+  .BtnDiv{
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 45dvw;
+  }
+  .imgSection{
+    display: flex;
+  }
+  .built-h2{
+    width: 45dvw;
+  }
+  .built-P2{
+    width: 75dvw;
+  }
+  footer{
+    width: 100dvw;
+  }
+  .footer-02{
+    top: 127%;
+  }
+  .footer-section{
+    width: 100dvw;
+  }
 }
