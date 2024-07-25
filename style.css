@@ -73,7 +73,7 @@ h1{
   height: 58px;
   border-radius: 999px;
   color: white;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 200px 0;
 }
 
 .section-img{
@@ -88,4 +88,112 @@ h1{
   gap: 20px;
   width: 100dvw;
   justify-content: center;
+}
+
+.Built-for-modern-use-Section{
+  margin: 40px 0 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.built-P{
+  color: var(--blueButtonColor);
+  font-weight: bold;
+}
+
+.built-h2{
+  margin: 10px 0 20px;
+  font-weight: bold;
+  font-size: xx-large;
+  width: 80dvw;
+  color: var(--primaryFontColor);
+}
+
+.built-P2{
+  color: var(--secondaryFontColor);
+  width: 83.6dvw;
+}
+
+footer{
+  width: 375px;
+  height: 428px;
+  background-image: url(img/footerBG.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section{
+  padding: 0 1rem 0 1rem;
+  background-color: var(--blueButtonColor);
+  width: 375px;
+  height: 428px;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-h2{
+  color: #FAFAFA;
+  font-size: xx-large;
+  width: 70dvw;
+}
+
+.footer-p{
+  color: #FAFAFA;
+  margin: 20px 0 20px;
+  width: 70dvw;
+}
+
+.footer-downloadBtn{
+  background-color: var(--purpleButtonColor);
+  border: none;
+  width: 193px;
+  height: 58px;
+  border-radius: 999px;
+  color: white;
+  margin: 10px 0 40px 0;
+}
+
+.footer-btnSpan{
+  color: #D9B8FF;
+}
+
+.footer-02{
+  color: var(--secondaryFontColor);
+  background-color: #FAFAFA;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 1;
+  top: 227%;
+  border: solid;
+  border-width: 1px;
+  font-weight: bold;
+}
+
+.main-01{
+  color: var(--secondaryFontColor);
+  background-color: #FAFAFA;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  border: solid;
+  border-width: 1px;
+  font-weight: bold;
 }
