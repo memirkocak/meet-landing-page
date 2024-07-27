@@ -74,6 +74,11 @@ h1{
   border-radius: 999px;
   color: white;
   margin: 10px 0 130px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .section-img{
@@ -123,12 +128,13 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: 100dvw;
 }
 
 .footer-section{
   padding: 0 1rem 0 1rem;
   background-color: var(--blueButtonColor);
-  width: 375px;
+  width: 100dvw;
   height: 428px;
   opacity: 0.6;
   display: flex;
@@ -175,10 +181,10 @@ footer{
   border-radius: 999px;
   position: absolute;
   z-index: 1;
-  top: 234%;
   border: solid;
   border-width: 1px;
   font-weight: bold;
+  transform: translatey(-380%);
 }
 
 .main-01{
@@ -221,13 +227,22 @@ footer{
   .built-P2{
     width: 75dvw;
   }
-  footer{
-    width: 100dvw;
-  }
-  .footer-02{
-    top: 127%;
-  }
   .footer-section{
-    width: 100dvw;
+    width: 100dvw; 
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .h1-p{
+    width: 33dvw;
+  }
+  .BtnDiv{
+    width: 25dvw;
+  }
+  .built-h2{
+    width: 24dvw;
+  }
+  .built-P2{
+    width: 31dvw;
   }
 }
