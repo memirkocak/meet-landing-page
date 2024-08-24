@@ -18,13 +18,6 @@ body{
   font-family: var(--Font);
 }
 
-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px 0 30px;
-}
-
 .logo{
   margin-bottom:60px;
 }
@@ -43,14 +36,13 @@ main{
 h1{
   color: var(--primaryFontColor);
   text-align: center;
-  width: 200px;
+  font-size: 50px;
 }
 
 .h1-p{
   text-align: center;
   color: var(--secondaryFontColor);
-  margin: 20px 0 20px;
-  width: 85dvw;
+  margin: 40px 0 40px;
 }
 
 .DownloadBtn{
@@ -60,6 +52,7 @@ h1{
   height: 58px;
   border-radius: 999px;
   color: white;
+  margin: 0px 20px;
 }
 
 .DownloadBtn span{
@@ -121,16 +114,6 @@ h1{
   width: 83.6dvw;
 }
 
-footer{
-  width: 100dvw;
-  height: 428px;
-  background-image: url(img/footerBG.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: 100dvw;
-}
-
 .footer-section{
   padding: 0 1rem 0 1rem;
   background-color: var(--blueButtonColor);
@@ -159,15 +142,17 @@ footer{
 .footer-downloadBtn{
   background-color: var(--purpleButtonColor);
   border: none;
-  width: 193px;
-  height: 58px;
+  padding: 20px 30px;
   border-radius: 999px;
   color: white;
   margin: 10px 0 40px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-btnSpan{
   color: #D9B8FF;
+  margin-left: 10px;
 }
 
 .footer-02{
@@ -184,7 +169,8 @@ footer{
   border: solid;
   border-width: 1px;
   font-weight: bold;
-  transform: translatey(-380%);
+  top: 0;
+  transform: translateY(-50%);
 }
 
 .main-01{
@@ -199,7 +185,7 @@ footer{
   border: solid;
   border-width: 1px;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin: 20px auto;
 }
 
 .BtnDiv{
@@ -208,14 +194,140 @@ footer{
   align-items: center;
 }
 
+.section{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(/img/footerBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.section::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4D96A9 ;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.section .content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+  .section{
+    padding: 40px 20px;
+    background-position: top;
+  }
+  .section.content{
+    font-size: 1.2rem;
+  }
+
+  .header-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .div1, .div2, .div3{
+    width: 32%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .div1, .div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    gap: 2rem;
+  }
+
+  .translator{
+    transform:translateY(-50px);
+  }
+  .translator-2{
+    transform:translateY(50px);
+  }
+
+  .div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transform: translateY(100px);
+    position: relative;
+  }
+
+  .mobile-responsive{
+    width: 55px;
+    height: 55px;
+  }
+
+  .mobile-header-img{
+    width: 100dvw;
+  }
+
+  .div-col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1439px){
+    .header-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .div1, .div3{
+      width: 48%;
+    }
+    .div2{
+        order: 3;
+        width: 100%;
+    }
+  }
+
+  .logo-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  }
+
 @media screen and (min-width: 768px) {
+  h1{
+    width: 50dvw;
+  }
   .h1-p{
-    width: 55dvw;
+    width: 50dvw;
   }
   .BtnDiv{
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
     width: 45dvw;
   }
   .imgSection{
@@ -230,9 +342,25 @@ footer{
   .footer-section{
     width: 100dvw; 
   }
+  .section{
+    background-image: url(img/tablet.png);
+  }
+  .mobile-responsive{
+    width: 110px;
+    height: 110px;
+  }
+  .div1, .div3{
+    display: none;
+  }
+  .mobile-header-img{
+    width: 100dvw;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  h1{
+    width: 33dvw;
+  }
   .h1-p{
     width: 33dvw;
   }
@@ -244,5 +372,40 @@ footer{
   }
   .built-P2{
     width: 31dvw;
+  }
+  .section .content{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .section{
+    background-image: url(img/desktop.png);
+    height: 35vh;
+  }
+  .footer-p{
+    width: 18%;
+    text-align: left;
+  }
+  .footer-h2{
+    width: 20%;
+    text-align: left;
+    font-size: 40px;
+  }
+  .mobile-header{
+    display: none;
+  }
+  .div1, .div3{
+    display: flex;
+  }
+  .DownloadBtn:hover{
+    background-color: #71C0D4;
+  }
+  .what-is-itBtn:hover{
+    background-color: #B18BDD;
+  }
+  .footer-downloadBtn:hover{
+    background-color: #B18BDD;
+  }
+  .DownloadBtn, .what-is-itBtn, .footer-downloadBtn{
+    cursor: url(img/Pointer.png), auto;
   }
 }
